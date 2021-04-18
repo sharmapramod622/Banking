@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.BankApp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/banking"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/banking"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme_white">
+        <activity
+            android:name="com.example.BankApp.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.BankApp.user_list"
+            android:label="BankingAPP"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name="com.example.BankApp.user_data"
+            android:label="User Details"
+            android:parentActivityName="com.example.BankApp.user_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.BankApp.sendtouser"
+            android:label="Transfer Money"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.BankApp.history"
+            android:label="Transactions"
+            android:parentActivityName="com.example.BankApp.user_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>
